@@ -1,0 +1,445 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* hero section */
+.hero {
+  background: url(./images/hero-bg.jpg.webp) center center / cover;
+  background-size: cover;
+  height: 100vh;
+  padding: 25px;
+  color: white;
+}
+
+.hero img {
+  margin: 10px auto;
+  display: block;
+}
+
+.hero nav {
+  margin-bottom: 200px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.hero nav ul {
+  list-style: none;
+  display: none;
+  gap: 30px;
+  font-size: 13px;
+  font-weight: 500;
+  justify-content: center;
+}
+
+@media screen and (min-width: 992px) {
+  .hero nav ul {
+    display: flex;
+  }
+
+  .hero nav i {
+    display: none;
+  }
+
+  .hero nav {
+    justify-content: center;
+  }
+}
+
+.hero ul li:hover {
+  color: #f42f2c;
+  font-weight: 400;
+}
+
+.hero nav i {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.hero .first-paragraph {
+  letter-spacing: 3px;
+  font-weight: 300;
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin-top: 20px;
+  margin-bottom: 7px;
+}
+
+.hero .desc {
+  width: 440px;
+}
+
+.hero button {
+  padding: 14px 25px;
+  color: white;
+  background-color: #f42f2c;
+  border: none;
+  font-weight: bolder;
+  margin-top: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero button:hover {
+  background-color: rgb(32, 31, 31);
+}
+
+/* about section */
+
+.about-section {
+  padding: 100px 0;
+}
+
+.about-section h1 {
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.about-section p {
+  color: gray;
+  font-size: 14px;
+  font-weight: 300;
+  padding-right: 30px;
+}
+
+.about-section button {
+  padding: 14px 25px;
+  color: white;
+  background-color: #f42f2c;
+  border: none;
+  font-weight: bolder;
+  margin-top: 25px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.about-section button:hover {
+  box-shadow: 0px 20px 20px 0px rgba(245, 63, 81, 0.2);
+}
+
+/* 
+
+.sec3 {
+  background-color: whitesmoke;
+  padding: 120px;
+}
+.sec3 h1 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 36px;
+}
+.under-h1-sec3 {
+  text-align: center;
+  color: gray;
+  font-weight: 300;
+  font-size: 14px;
+}
+.sec3 ul {
+  list-style: none;
+  display: flex;
+  font-size: 13px;
+  justify-content: center;
+  background-color: white;
+  margin-top: 50px;
+  border-radius: 15px;
+  overflow: hidden;
+  align-items: center;
+  box-shadow:
+    rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+.sec3 ul .divider {
+  width: 1px;
+  height: 120px;
+  background-color: rgb(224, 217, 217);
+}
+.item-sec3 {
+  padding: 40px 73px;
+}
+.first-child {
+  background-color: #f42f2c;
+  color: white;
+  height: 120px;
+  line-height: 40px;
+}
+.sec3-all-divs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  gap: 30px;
+  justify-content: space-between;
+}
+.box-wrapper-sec3 {
+  background-color: white;
+  padding: 25px 35px;
+  width: 580px;
+  border-radius: 10px;
+}
+.box-sec3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box-sec3 h3 {
+  font-weight: 600;
+}
+.dollar-49-sec3 {
+  color: #f42f2c;
+  font-weight: 600;
+  font-size: 18px;
+}
+.usage-p-sec3 {
+  color: gray;
+  font-weight: 300;
+  font-size: 14px;
+  margin-top: 13px;
+  width: 380px;
+}
+/* reservation */
+.reservation {
+  background: url(./images/reservation-bg.jpg.webp) no-repeat center / cover;
+  color: whitesmoke;
+  padding: 120px;
+  background-blend-mode: multiply;
+  background-color: rgb(83, 80, 80);
+}
+
+.reservation-desc {
+  margin-top: 13px;
+  font-size: 14px;
+  margin-bottom: 60px;
+}
+
+.right-reservation form {
+  background-color: white;
+  padding: 100px 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.right-reservation form input,
+.right-reservation select {
+  padding: 10px;
+  color: rgb(160, 159, 159);
+  border: 1px solid rgb(218, 211, 211);
+  outline: none;
+}
+
+.right-reservation form input::placeholder {
+  color: rgb(160, 159, 159);
+}
+
+.right-reservation button {
+  padding: 14px 25px;
+  color: white;
+  background-color: #f42f2c;
+  border: none;
+  font-weight: 600;
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.right-reservation button:hover {
+  box-shadow: -14.142px 14.142px 20px 0px rgba(244, 47, 44, 0.2);
+}
+
+/*
+.hero-sec5 {
+  background: url(./Images/sec5-bg.jpg) no-repeat center / cover;
+  padding: 120px;
+  text-align: center;
+}
+.hero-sec5 h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.stars-sec5 {
+  font-size: 13px;
+}
+.orange-star {
+  color: rgb(216, 216, 24);
+}
+.hero-sec5 p {
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 15px;
+  color: gray;
+  font-size: 14px;
+  font-weight: 300;
+}
+.small-squares-sec5 span {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: rgb(199, 195, 195);
+  margin: 4px;
+  margin-top: 50px;
+}
+.first-span-sec5 {
+  background-color: red !important;
+}
+
+.sec6 {
+  padding: 120px 0;
+  text-align: center;
+}
+.sec6 h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+.lorem-below-h1 {
+  color: #777777;
+  font-size: 14px;
+  font-weight: 300;
+  width: 550px;
+  margin: 6px auto 90px;
+}
+.all-divs-sec6 {
+  display: flex;
+  text-align: left;
+  gap: 40px;
+}
+.div1-sec6 {
+  width: 255px;
+}
+.black-date-sec6 {
+  background-color: black;
+  color: white;
+  width: 45%;
+  font-weight: 100;
+  text-align: center;
+  font-size: 15px;
+  margin: 15px 0 20px;
+}
+.div1-sec6 h4 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23px;
+  margin-bottom: 15px;
+}
+.inappropriate-p {
+  color: #777777;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.span-sec6 {
+  margin: 10px;
+  color: #777777;
+  font-weight: 300;
+  font-size: 14px;
+}
+footer {
+  background-color: #f42f2c;
+  padding: 120px;
+  text-align: center;
+  color: whitesmoke;
+}
+.all-divs-footer {
+  display: flex;
+  gap: 30px;
+  text-align: left;
+}
+footer h3 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.div1-OpeningHours {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eb7474;
+  margin-top: 15px;
+  padding-bottom: 15px;
+  font-size: 15px;
+}
+.child {
+  width: 30%;
+}
+.contact-us-p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.number-sec6 {
+  font-size: 25px;
+  font-weight: 600;
+}
+.newsletter-p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.input-button {
+  background-color: whitesmoke;
+  padding: 5px 2px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.input-button input {
+  padding: 12px;
+  border-radius: 20px;
+  border: none;
+  width: 330px;
+}
+footer button {
+  border: none;
+  border-radius: 100%;
+  background-color: #f42f2c;
+  padding: 10px;
+}
+footer button i {
+  font-weight: 300;
+  color: whitesmoke;
+}
+.bottom-part-footer {
+  background-color: #222222;
+  padding: 15px 0px;
+}
+.copyright-p {
+  color: white;
+  font-size: 14px;
+}
+.icons {
+  color: whitesmoke;
+  display: flex;
+  flex-direction: row;
+}
+.icons span {
+  background-color: black;
+  margin: 0 5px;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+}
+.bottom-container {
+  display: flex;
+  justify-content: space-between;
+}  */
