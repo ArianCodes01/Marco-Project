@@ -389,68 +389,71 @@ a {
 }
 
 /* footer */
-/*
+
 footer {
   background-color: #f42f2c;
-  padding: 120px;
-  text-align: center;
+  padding: 120px 0;
   color: whitesmoke;
 }
-.all-divs-footer {
-  display: flex;
-  gap: 30px;
-  text-align: left;
-}
+
 footer h3 {
   font-weight: 600;
   margin-bottom: 20px;
 }
-.div1-OpeningHours {
+
+.hr-list {
   display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #eb7474;
+  flex-direction: column;
   margin-top: 15px;
   padding-bottom: 15px;
   font-size: 15px;
 }
-.child {
-  width: 30%;
+
+.hr-item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(238, 238, 238, 0.3);
+  padding: 20px 0;
 }
-.contact-us-p {
+
+.footer-item .desc {
   font-size: 14px;
   margin-bottom: 15px;
 }
-.number-sec6 {
+
+.number {
   font-size: 25px;
   font-weight: 600;
 }
-.newsletter-p {
-  font-size: 14px;
-  margin-bottom: 15px;
-}
-.input-button {
-  background-color: whitesmoke;
+
+.input-group {
+  background-color: #f9f9ff;
   padding: 5px 2px;
   border-radius: 50px;
   display: flex;
   justify-content: space-between;
 }
-.input-button input {
-  padding: 12px;
+
+.input-group input {
+  background-color: #f9f9ff;
+  padding: 11px;
   border-radius: 20px;
   border: none;
-  width: 330px;
+  width: 100%;
+  outline: none;
 }
-footer button {
+
+.input-group button {
   border: none;
   border-radius: 100%;
   background-color: #f42f2c;
-  padding: 10px;
+  padding: 12px;
+  cursor: pointer;
 }
-footer button i {
-  font-weight: 300;
+
+.input-group button i {
   color: whitesmoke;
-}*/
+}
 
 /* bottom-part-footer */
 
