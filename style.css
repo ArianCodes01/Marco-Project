@@ -221,7 +221,7 @@ a {
 .reservation {
   background: url(./images/reservation-bg.jpg.webp) no-repeat center / cover;
   color: whitesmoke;
-  padding: 120px;
+  padding: 120px 0;
   background-blend-mode: multiply;
   background-color: rgb(83, 80, 80);
 }
@@ -274,28 +274,32 @@ a {
 /* review-area section */
 .review-area {
   background: url(./Images/sec5-bg.jpg) no-repeat center / cover;
-  padding: 120px;
+  padding: 120px 0;
   text-align: center;
 }
+
 .review-area h4 {
   font-size: 18px;
   font-weight: 600;
   margin-top: 10px;
 }
+
 .review-area .stars {
   font-size: 13px;
 }
+
 .review-area .orange-star {
   color: rgb(216, 216, 24);
 }
+
 .review-area .desc {
-  width: 600px;
   margin: 0 auto;
   margin-top: 15px;
   color: gray;
   font-size: 14px;
   font-weight: 300;
 }
+
 .review-area .owl-dots span {
   width: 10px;
   height: 10px;
@@ -304,6 +308,7 @@ a {
   margin: 4px;
   margin-top: 50px;
 }
+
 .review-area .red-owl-dot {
   background-color: red !important;
 }
@@ -312,45 +317,46 @@ a {
 
 .blog {
   padding: 120px 0;
-  text-align: center;
 }
+
 .blog h1 {
   font-size: 36px;
   font-weight: 600;
+  text-align: center;
 }
+
 .blog .top-desc {
   color: #777777;
   font-size: 14px;
   font-weight: 300;
-  width: 550px;
   margin: 6px auto 90px;
+  text-align: center;
 }
-.blog .blog-items {
-  display: flex;
-  text-align: left;
-  gap: 40px;
-}
-.blog .blog-item {
-  width: 255px;
-}
-.blog .img-wrapper{
+
+.blog .img-wrapper {
   overflow: hidden;
 }
-.blog .blog-item img{
+
+.blog .blog-item img {
   transition: all 0.3s ease;
+  width: 100%;
+  object-fit: cover;
 }
-.blog .blog-item img:hover{
+
+.blog .blog-item:hover img {
   transform: scale(1.1);
 }
+
 .blog .item-date {
   background-color: black;
   color: white;
-  width: 45%;
+  width: 120px;
   font-weight: 100;
   text-align: center;
   font-size: 15px;
   margin: 15px 0 20px;
 }
+
 .blog .blog-item h4 {
   font-size: 18px;
   font-weight: 600;
@@ -360,7 +366,7 @@ a {
   cursor: pointer;
 }
 
-.blog .blog-item h4:hover{
+.blog .blog-item:hover h4 {
   color: #f42f2c;
 }
 
@@ -370,10 +376,12 @@ a {
   font-weight: 300;
   margin-bottom: 20px;
 }
-.blog .item-bottom{
+
+.blog .item-bottom {
   display: flex;
-  gap: 30px;
+  justify-content: space-between;
 }
+
 .blog .item-bottom p {
   color: #777777;
   font-weight: 300;
