@@ -411,7 +411,7 @@ footer h3 {
   margin-bottom: 20px;
 }
 
-.hr-list {
+footer .hr-list {
   display: flex;
   flex-direction: column;
   margin-top: 15px;
@@ -419,24 +419,24 @@ footer h3 {
   font-size: 15px;
 }
 
-.hr-item {
+footer .hr-item {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid rgba(238, 238, 238, 0.3);
   padding: 20px 0;
 }
 
-.footer-item .desc {
+footer .footer-item .desc {
   font-size: 14px;
   margin-bottom: 15px;
 }
 
-.number {
+footer .number {
   font-size: 25px;
   font-weight: 600;
 }
 
-.input-group {
+footer .input-group {
   background-color: #f9f9ff;
   padding: 5px 2px;
   border-radius: 50px;
@@ -444,7 +444,7 @@ footer h3 {
   justify-content: space-between;
 }
 
-.input-group input {
+footer .input-group input {
   background-color: #f9f9ff;
   padding: 11px;
   border-radius: 20px;
@@ -453,7 +453,7 @@ footer h3 {
   outline: none;
 }
 
-.input-group button {
+footer .input-group button {
   border: none;
   border-radius: 100%;
   background-color: #f42f2c;
@@ -461,36 +461,56 @@ footer h3 {
   cursor: pointer;
 }
 
-.input-group button i {
+footer .input-group button i {
   color: whitesmoke;
 }
 
 /* bottom-part-footer */
 
-/*
 .bottom-part-footer {
   background-color: #222222;
   padding: 15px 0px;
 }
-.copyright-p {
+
+.bottom-part-footer .copyright-p {
   color: white;
   font-size: 14px;
 }
-.icons {
+
+.bottom-part-footer .copyright-p i,
+span {
+  color: #f42f2c;
+}
+.bottom-part-footer .reverse{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.bottom-part-footer .social-icons {
   color: whitesmoke;
   display: flex;
   flex-direction: row;
 }
-.icons span {
-  background-color: black;
-  margin: 0 5px;
-  padding: 10px 10px;
+
+.bottom-part-footer .social-icons span {
+  background-color: #111111;
+  margin: 0 2px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 13px;
+  color: white;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
-.bottom-container {
-  display: flex;
-  justify-content: space-between;
-}*/
+.bottom-part-footer .social-icons span:hover{
+  background-color: #f42f2c;
+  color: black;
+}
+@media screen and (max-width: 992px){
+  .bottom-part-footer .reverse{
+    flex-direction: row;
+  }
+}
