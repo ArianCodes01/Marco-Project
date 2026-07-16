@@ -63,15 +63,16 @@ a {
     justify-content: center;
   }
 }
-
+.hero ul li{
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
 .hero ul li:hover {
   color: #f42f2c;
-  font-weight: 400;
 }
 
 .hero nav i {
   font-size: 20px;
-  cursor: pointer;
 }
 
 .hero .first-paragraph {
@@ -472,13 +473,12 @@ footer .input-group button i {
   padding: 15px 0px;
 }
 
-.bottom-part-footer .copyright-p {
+.bottom-part-footer .copyright {
   color: white;
   font-size: 14px;
 }
 
-.bottom-part-footer .copyright-p i,
-span {
+.bottom-part-footer .copyright i, .copyright span {
   color: #f42f2c;
 }
 .bottom-part-footer .reverse{
