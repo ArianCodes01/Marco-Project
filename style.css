@@ -138,84 +138,94 @@ a {
   box-shadow: 0px 20px 20px 0px rgba(245, 63, 81, 0.2);
 }
 
-/* gallery section */
-/*
-.sec3 {
+/* menu section */
+
+.menu-area {
   background-color: whitesmoke;
-  padding: 120px;
+  padding: 120px 0;
 }
-.sec3 h1 {
+
+.menu-area h1 {
   text-align: center;
   font-weight: 600;
   font-size: 36px;
 }
-.under-h1-sec3 {
+
+.menu-area .top-desc {
   text-align: center;
   color: gray;
   font-weight: 300;
   font-size: 14px;
 }
-.sec3 ul {
+
+.menu-area .menu-item-select {
+  padding: 0 20px;
+}
+
+.menu-area ul {
   list-style: none;
   display: flex;
-  font-size: 13px;
-  justify-content: center;
+  font-size: 12px;
+  flex-wrap: wrap;
   background-color: white;
   margin-top: 50px;
   border-radius: 15px;
   overflow: hidden;
-  align-items: center;
   box-shadow:
     rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
     rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
-.sec3 ul .divider {
-  width: 1px;
-  height: 120px;
-  background-color: rgb(224, 217, 217);
+
+.menu-area ul .menu-li {
+  padding: 40px 0;
+  width: 33.3333%;
+  text-align: center;
 }
-.item-sec3 {
-  padding: 40px 73px;
+
+@media screen and (min-width: 768px) {
+  .menu-area ul .menu-li {
+    width: 16.6666%;
+  }
 }
-.first-child {
+
+.menu-area ul .first-child {
   background-color: #f42f2c;
   color: white;
-  height: 120px;
-  line-height: 40px;
 }
-.sec3-all-divs {
-  display: flex;
-  flex-wrap: wrap;
+
+.menu-list {
   margin-top: 80px;
-  gap: 30px;
-  justify-content: space-between;
 }
-.box-wrapper-sec3 {
+
+.menu-area .menu-item {
   background-color: white;
   padding: 25px 35px;
-  width: 580px;
   border-radius: 10px;
 }
-.box-sec3 {
+
+.menu-area .menu-item-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.box-sec3 h3 {
+
+.menu-area .menu-item-info h3 {
   font-weight: 600;
 }
-.dollar-49-sec3 {
+
+.menu-area .menu-item-info p {
   color: #f42f2c;
   font-weight: 600;
   font-size: 18px;
 }
-.usage-p-sec3 {
+
+.menu-area .menu-item .desc {
   color: gray;
   font-weight: 300;
   font-size: 14px;
   margin-top: 13px;
-  width: 380px;
-}*/
+}
+
 /* reservation section */
 
 .reservation {
