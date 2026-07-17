@@ -39,6 +39,7 @@ a {
   flex-direction: row-reverse;
   justify-content: space-between;
   padding: 20px 0;
+  position: relative;
 }
 
 .hero nav ul {
@@ -63,10 +64,12 @@ a {
     justify-content: center;
   }
 }
-.hero ul li{
+
+.hero ul li {
   transition: all 0.3s ease;
   cursor: pointer;
 }
+
 .hero ul li:hover {
   color: #f42f2c;
 }
@@ -103,6 +106,58 @@ a {
 
 .hero button:hover {
   background-color: rgb(32, 31, 31);
+}
+.menuIcon{
+  cursor: pointer;
+}
+
+/* sideBar section */
+
+.sideBar {
+  position: fixed;
+  top: 0;
+  padding-top: 18px;
+  bottom: 0;
+  z-index: 998;
+  background: rgba(0, 0, 0, 0.8);
+  left: -260px;
+  width: 260px;
+  overflow-y: auto;
+  transition: 0.4s;
+}
+
+.sideBar ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sideBar ul li {
+  position: relative;
+  display: flex;
+}
+
+.sideBar ul li a {
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+  overflow: hidden;
+  padding: 10px 22px 10px 15px;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  outline: none;
+  font-weight: 400;
+}
+
+.sideBar ul li i {
+  position: absolute;
+  right: 0;
+  z-index: 99;
+  padding: 15px;
+  cursor: pointer;
+  color: #fff;
+  margin-right: 10px;
 }
 
 /* about section */
@@ -478,13 +533,16 @@ footer .input-group button i {
   font-size: 14px;
 }
 
-.bottom-part-footer .copyright i, .copyright span {
+.bottom-part-footer .copyright i,
+.copyright span {
   color: #f42f2c;
 }
-.bottom-part-footer .reverse{
+
+.bottom-part-footer .reverse {
   display: flex;
   flex-direction: row-reverse;
 }
+
 .bottom-part-footer .social-icons {
   color: whitesmoke;
   display: flex;
@@ -505,12 +563,14 @@ footer .input-group button i {
   transition: all 0.3s ease;
   cursor: pointer;
 }
-.bottom-part-footer .social-icons span:hover{
+
+.bottom-part-footer .social-icons span:hover {
   background-color: #f42f2c;
   color: black;
 }
-@media screen and (max-width: 992px){
-  .bottom-part-footer .reverse{
+
+@media screen and (max-width: 992px) {
+  .bottom-part-footer .reverse {
     flex-direction: row;
   }
 }
