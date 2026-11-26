@@ -94,7 +94,7 @@ a {
 }
 
 .hero .desc {
-  width: 440px;
+  max-width: 440px;
 }
 
 .hero button {
